@@ -31,6 +31,7 @@
             this.btnStrings = new System.Windows.Forms.Button();
             this.btnSpan = new System.Windows.Forms.Button();
             this.btnLoop = new System.Windows.Forms.Button();
+            this.btnAwait = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // btnStrings
@@ -63,11 +64,22 @@
             this.btnLoop.UseVisualStyleBackColor = true;
             this.btnLoop.Click += new System.EventHandler(this.btnLoop_Click);
             // 
+            // btnAwait
+            // 
+            this.btnAwait.Location = new System.Drawing.Point(272, 40);
+            this.btnAwait.Name = "btnAwait";
+            this.btnAwait.Size = new System.Drawing.Size(75, 23);
+            this.btnAwait.TabIndex = 3;
+            this.btnAwait.Text = "Await";
+            this.btnAwait.UseVisualStyleBackColor = true;
+            //this.btnAwait.Click += new System.EventHandler(this.btnAwait_ClickAsync);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.btnAwait);
             this.Controls.Add(this.btnLoop);
             this.Controls.Add(this.btnSpan);
             this.Controls.Add(this.btnStrings);
@@ -82,5 +94,6 @@
         private Button btnStrings;
         private Button btnSpan;
         private Button btnLoop;
+        private Button btnAwait;
     }
 }
